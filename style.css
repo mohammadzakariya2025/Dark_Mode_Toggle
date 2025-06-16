@@ -18,6 +18,7 @@ visibility: hidden;
    background-color: lightgray;
    border-radius: 20px;
    cursor: pointer;
+   transition: .4s;
 }
 
 .circle{
@@ -32,11 +33,12 @@ visibility: hidden;
 }
 
 input:checked + .label{
-    background-color: salmon;
+    background-color: white;
 }
 
 .input:checked + .label .circle{
     animation: toggleOn 0.4s linear forwards;
+    background-color: black;
 }
 
 @keyframes toggleOn {
